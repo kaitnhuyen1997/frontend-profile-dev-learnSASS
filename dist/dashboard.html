@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Welcome to Profile Dev - learn SASS</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/style.min.css" />
+
+    <!-- Font Rubik -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,600,700&display=swap&subset=vietnamese"
+      rel="stylesheet"
+    />
+
+    <!-- FontAwesome Link -->
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.1.1/js/all.js"
+      integrity="sha384-BtvRZcyfv4r0x/phJt9Y9HhnN5ur1Z+kZbKVgzVBAlQZX4jvAuImlIz+bG7TS00a"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <nav class="navbar bg-dark">
+      <h1>
+        <a href="dashboard.html"> <i class="fas fa-code"></i> FunDev</a>
+      </h1>
+      <ul>
+        <li><a href="profiles.html">Developers</a></li>
+        <li><a href="posts.html">Posts</a></li>
+        <li>
+          <a href="dashboard.html">
+            <i class="fas fa-user"></i> <span class="hide-sm">Dashboard</span>
+          </a>
+        </li>
+        <li>
+          <a href="logout.html">
+            <i class="fas fa-sign-out-alt "></i>
+            <span class="hide-sm">Logout</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <!-- end nav.navbar -->
+
+    <section class="container">
+      <h1 class="large text-primary-color">
+        Dashboard
+      </h1>
+      <p class="lead">
+        <i class="fas fa-user"></i>
+        Welcome Doris Puppy
+      </p>
+
+      <div class="dash-buttons">
+        <a href="create-profile.html" class="btn my-1">
+          <i class="fas fa-user-circle text-primary-color mr-1"></i>
+          Edit Profile
+        </a>
+        <a href="add-experience.html" class="btn my-1">
+          <i class="fab fa-black-tie text-primary-color mr-1"></i>
+          Add Experience
+        </a>
+        <a href="add-education.html" class="btn my-1">
+          <i class="fas fa-graduation-cap text-primary-color mr-1"></i>
+          Add Education
+        </a>
+      </div>
+      <!-- end div.dash-buttons -->
+
+      <!-- Experience -->
+      <h2 class="my-2">
+        Experience Credentials
+      </h2>
+      <table class="table table-hover">
+        <thead>
+          <tr>
+            <th>Company</th>
+            <th class="hide-sm">Title</th>
+            <th class="hide-sm">Years</th>
+            <th class=""></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Facebook</td>
+            <td class="hide-sm">Senior Developer</td>
+            <td class="hide-sm">
+              Oct 2011 - Current
+            </td>
+            <td><a href="" class="btn btn-danger">Detele</a></td>
+          </tr>
+          <tr>
+            <td>Sun Microsystems</td>
+            <td class="hide-sm">Developer</td>
+            <td class="hide-sm">
+              Oct 2004 - Nov 2010
+            </td>
+            <td><a href="" class="btn btn-danger">Detele</a></td>
+          </tr>
+        </tbody>
+      </table>
+      <!-- End Experience -->
+
+      <!-- Education -->
+      <h2 class="my-2">
+        Education Credentials
+      </h2>
+      <table class="table table-hover">
+        <thead>
+          <tr>
+            <th>School</th>
+            <th class="hide-sm">Degree</th>
+            <th class="hide-sm">Year</th>
+            <th class=""></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>University of Washingtion</td>
+            <td class="hide-sm">Master</td>
+            <td class="hide-sm">
+              Sep 1993 - June 1999
+            </td>
+            <td><a href="" class="btn btn-danger">Detele</a></td>
+          </tr>
+        </tbody>
+      </table>
+      <!-- End Education -->
+
+      <div class="my-2">
+        <button class="btn btn-danger">
+          <i class="fas fa-user-minus mr-2"></i> Delete My Account
+        </button>
+      </div>
+    </section>
+    <!-- end section.container -->
+
+    <footer class="bg-dark text-light-color text-center py-2">
+      <small>Practing Dev Frontend with SASS - Developed by Kai Tran</small>
+    </footer>
+    <!-- end footer -->
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

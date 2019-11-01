@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Welcome to Profile Dev - learn SASS</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/style.min.css" />
+
+    <!-- Font Rubik -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,600,700&display=swap&subset=vietnamese"
+      rel="stylesheet"
+    />
+
+    <!-- FontAwesome Link -->
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.1.1/js/all.js"
+      integrity="sha384-BtvRZcyfv4r0x/phJt9Y9HhnN5ur1Z+kZbKVgzVBAlQZX4jvAuImlIz+bG7TS00a"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <nav class="navbar bg-dark">
+      <h1>
+        <a href="dashboard.html"> <i class="fas fa-code"></i> FunDev</a>
+      </h1>
+      <ul>
+        <li><a href="profiles.html">Developers</a></li>
+        <li><a href="posts.html">Posts</a></li>
+        <li>
+          <a href="dashboard.html">
+            <i class="fas fa-user"></i> <span class="hide-sm">Dashboard</span>
+          </a>
+        </li>
+        <li>
+          <a href="logout.html">
+            <i class="fas fa-sign-out-alt "></i>
+            <span class="hide-sm">Logout</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <!-- end nav.navbar -->
+
+    <section class="container">
+      <div class="col-lg-6 mx-auto">
+        <h1 class="large text-primary-color">
+          Add A Experience
+        </h1>
+        <p class="lead">
+          <i class="fas fa-code-branch"></i>
+          Add any developer/programning positions that you have had in the past
+        </p>
+        <small class="py-2">* = required fields</small>
+
+        <!-- Form  -->
+        <form class="form py-2">
+          <div class="form-group">
+            <input
+              type="text"
+              name="job-title"
+              id="job-title"
+              class="form-control"
+              placeholder="* Job Title.."
+            />
+          </div>
+          <!-- Job Title -->
+
+          <div class="form-group">
+            <input
+              type="text"
+              name="company"
+              id="company"
+              class="form-control"
+              placeholder="* Company.."
+            />
+          </div>
+          <!-- Company -->
+
+          <div class="form-group">
+            <input
+              type="text"
+              name="location"
+              id="location"
+              class="form-control"
+              placeholder="Location.."
+            />
+          </div>
+          <!-- Location -->
+
+          <div class="form-group">
+            <h4>From Date</h4>
+            <input
+              type="date"
+              name="from-date"
+              id="from-date"
+              class="form-control"
+            />
+          </div>
+          <!-- From Date-->
+
+          <div class="form-group">
+            <h4>To Date</h4>
+            <input
+              type="date"
+              name="to-date"
+              id="to-date"
+              class="form-control"
+            />
+          </div>
+          <!-- To Date-->
+
+          <div class="form-check my-4">
+            <label class="form-check-label">
+              <input
+                type="checkbox"
+                class="form-check-input"
+                name="current"
+                id="current"
+                value="checkedValue"
+                checked
+              />
+              Current Job
+            </label>
+          </div>
+          <!-- Current Job-->
+
+          <div class="form-group">
+            <h4>Job Description</h4>
+            <textarea
+              class="form-control"
+              name="job-description"
+              id="job-description"
+              rows="5"
+              placeholder="Job Description"
+            >
+            </textarea>
+          </div>
+          <button type="submit" class="btn btn-primary my-4">Submit</button>
+          <a href="dashboard.html" class="btn btn-light my-4">Go Back</a>
+        </form>
+      </div>
+    </section>
+    <!-- end section.container -->
+
+    <footer class="bg-dark text-light-color text-center py-2">
+      <small>Practing Dev Frontend with SASS - Developed by Kai Tran</small>
+    </footer>
+    <!-- end footer -->
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

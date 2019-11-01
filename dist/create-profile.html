@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Welcome to Profile Dev - learn SASS</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/style.min.css" />
+
+    <!-- Font Rubik -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,600,700&display=swap&subset=vietnamese"
+      rel="stylesheet"
+    />
+
+    <!-- FontAwesome Link -->
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.1.1/js/all.js"
+      integrity="sha384-BtvRZcyfv4r0x/phJt9Y9HhnN5ur1Z+kZbKVgzVBAlQZX4jvAuImlIz+bG7TS00a"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <nav class="navbar bg-dark">
+      <h1>
+        <a href="dashboard.html"> <i class="fas fa-code"></i> FunDev</a>
+      </h1>
+      <ul>
+        <li><a href="profiles.html">Developers</a></li>
+        <li><a href="posts.html">Posts</a></li>
+        <li>
+          <a href="dashboard.html">
+            <i class="fas fa-user"></i> <span class="hide-sm">Dashboard</span>
+          </a>
+        </li>
+        <li>
+          <a href="logout.html">
+            <i class="fas fa-sign-out-alt "></i>
+            <span class="hide-sm">Logout</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <!-- end nav.navbar -->
+
+    <section class="container">
+      <div class="col-lg-6 mx-auto">
+        <h1 class="large text-primary-color">
+          Create Your Profile
+        </h1>
+        <p class="lead">
+          <i class="fas fa-user"></i>
+          Let's get some information to make your profile stand out
+        </p>
+        <small class="py-2">* = required fields</small>
+
+        <!-- Form  -->
+        <form class="form py-2">
+          <div class="form-group">
+            <select class="form-control" name="status" id="status">
+              <option value="0">* Select Professional Status</option>
+              <option value="Junior Developer">Junior Developer</option>
+              <option value="Senior Developer">Senior Developer</option>
+              <option value="Manager">Manager</option>
+              <option value="Student or Learning">Student or Learning</option>
+              <option value="Instructor">Instructor or Teacher</option>
+              <option value="Intern">Intern</option>
+              <option value="Other">Other</option>
+            </select>
+            <small class="text-muted"
+              >Give us an idea of where you are at in your career</small
+            >
+          </div>
+          <div class="form-group">
+            <input
+              type="text"
+              name="company"
+              id="company"
+              class="form-control"
+              placeholder="Company.."
+            />
+            <small class="text-muted"
+              >Could be your own company or one you work for</small
+            >
+          </div>
+          <div class="form-group">
+            <input
+              type="text"
+              name="website"
+              id="website"
+              class="form-control"
+              placeholder="Website.."
+            />
+            <small class="text-muted"
+              >Could be your own or a company website</small
+            >
+          </div>
+          <div class="form-group">
+            <input
+              type="text"
+              name="location"
+              id="location"
+              class="form-control"
+              placeholder="Location.."
+            />
+            <small class="text-muted"
+              >City & Country suggested (eg. Can Tho, Vietnam)</small
+            >
+          </div>
+          <div class="form-group">
+            <input
+              type="text"
+              name="skills"
+              id="skills"
+              class="form-control"
+              placeholder="* Skills.."
+            />
+            <small class="text-muted"
+              >Please use comma separated calues (eg. HTML, CSS, JavaScript,
+              Reactjs, Nodejs, PHP)</small
+            >
+          </div>
+          <div class="form-group">
+            <input
+              type="text"
+              name="github-username"
+              id="github-username"
+              class="form-control"
+              placeholder="Github Username.."
+            />
+            <small class="text-muted"
+              >If you want lastest repos and a Github link, include your
+              username</small
+            >
+          </div>
+
+          <div class="form-group">
+            <textarea
+              class="form-control"
+              name="bio"
+              id="bio"
+              placeholder="A short bio of yourseft"
+              rows="3"
+            >
+            </textarea>
+            <small class="text-muted">Tell us a little about yourself</small>
+          </div>
+
+          <div class="my-4">
+            <button class="btn btn-light">
+              Add Social Network Links
+            </button>
+            <span class="text-muted">Optional</span>
+          </div>
+
+          <div class="form-group social-input">
+            <i class="fas fa-globe fa-2x mr-2"></i>
+            <input
+              type="text"
+              name="globe"
+              id="globe"
+              class="form-control"
+              placeholder="Globe URL.."
+            />
+          </div>
+          <!-- Globe -->
+
+          <div class="form-group social-input">
+            <i class="fab fa-twitter fa-2x mr-2"></i>
+            <input
+              type="text"
+              name="twitter"
+              id="twitter"
+              class="form-control"
+              placeholder="Twitter URL.."
+            />
+          </div>
+          <!-- Twitter -->
+
+          <div class="form-group social-input">
+            <i class="fab fa-facebook fa-2x mr-2"></i>
+            <input
+              type="text"
+              name="facebook"
+              id="facebook"
+              class="form-control"
+              placeholder="Facebook URL.."
+            />
+          </div>
+          <!-- Facebook -->
+
+          <div class="form-group social-input">
+            <i class="fab fa-linkedin fa-2x mr-2"></i>
+            <input
+              type="text"
+              name="linkedin"
+              id="linkedin"
+              class="form-control"
+              placeholder="Linkedin URL.."
+            />
+          </div>
+          <!-- Linkedin -->
+
+          <div class="form-group social-input">
+            <i class="fab fa-youtube fa-2x mr-2"></i>
+            <input
+              type="text"
+              name="youtube"
+              id="youtube"
+              class="form-control"
+              placeholder="Youtube URL.."
+            />
+          </div>
+          <!-- Youtube -->
+
+          <div class="form-group social-input">
+            <i class="fab fa-instagram fa-2x mr-2"></i>
+            <input
+              type="text"
+              name="instagram"
+              id="instagram"
+              class="form-control"
+              placeholder="Instagram URL.."
+            />
+          </div>
+          <!-- Instagram -->
+
+          <button type="submit" class="btn btn-primary my-4">Submit</button>
+          <a href="dashboard.html" class="btn btn-light my-4">Go Back</a>
+        </form>
+      </div>
+    </section>
+    <!-- end section.container -->
+
+    <footer class="bg-dark text-light-color text-center py-2">
+      <small>Practing Dev Frontend with SASS - Developed by Kai Tran</small>
+    </footer>
+    <!-- end footer -->
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
